@@ -93,7 +93,8 @@ def delete(article,number):
 
 
 def main():
-        print("请选择您需要的操作：1.添加物品信息；2.删除物品信息；3.显示物品列表；4.查找物品信息")
+    while True:
+        print("请选择您需要的操作：1.添加物品信息；2.删除物品信息；3.显示物品列表；4.查找物品信息；5.退出程序")
         choice = int(input())
         if choice ==1:
             print("请输入物品名称：")
@@ -113,5 +114,8 @@ def main():
             print("请输入要查找的物品")
             article = input()
             search(article)
-        
+        if choice == 5:
+            break
+
+
 main()
